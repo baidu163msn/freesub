@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 91.196.32.163
-  port: 443
+  server: 195.133.23.200
+  port: 50111
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: 91.196.32.163
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
 proxy-groups:
 - name: PROXIES
   type: select
