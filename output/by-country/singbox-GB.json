@@ -4,23 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "66.90.104.42",
+      "server": "51.38.71.51",
       "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "149.102.149.207",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "vless",
@@ -34,32 +31,29 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "129.151.75.211",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "4TK6c2HHJvbvnhYhzcVyrZjxNrtOx3iqWlT+IKkDuDs="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
-      "server": "129.151.70.226",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "sGqcjLKeviTZ/pnU5/7q5crrIFQ7TwUufY/i6iG9+8E="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
-      "server": "51.38.71.51",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
+      "server": "5.152.223.97",
+      "server_port": 443,
+      "uuid": "be5b6ad6-8184-4b63-82ac-3bc00c09c98c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "strapi.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs",
+          "short_id": "1aa9f3c9021280c0"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
       "server": "78.129.208.44",
       "server_port": 421,
       "uuid": "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18",
@@ -79,6 +73,29 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+      "server": "vpn-uk-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-uk-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+      "server": "66.90.104.42",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
       "server": "138.124.125.211",
@@ -90,7 +107,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -102,18 +119,6 @@
     {
       "type": "hysteria2",
       "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
-      "server": "vpn-uk-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-uk-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
       "server": "labs.frkn.org",
       "server_port": 443,
       "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
@@ -125,7 +130,50 @@
     },
     {
       "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
+      "server": "31.76.7.154",
+      "server_port": 7443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
+      "server": "31.76.88.10",
+      "server_port": 443,
+      "uuid": "03c48eca-e0aa-4e18-998c-1f53f1de293c",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf5.rumedia-cdn.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf5.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
       "server": "46.250.250.149",
       "server_port": 2053,
       "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
@@ -144,6 +192,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -158,7 +214,9 @@
         "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 11 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 13 - xiaohe"
       ]
     },
     {
@@ -175,7 +233,9 @@
         "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 11 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 13 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
