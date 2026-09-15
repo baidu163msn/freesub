@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 194.87.196.13
+  server: 195.133.23.200
   port: 7018
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 4938e975724d0ed1
+  password: 81a20429165df87e
 proxy-groups:
 - name: PROXIES
   type: select
