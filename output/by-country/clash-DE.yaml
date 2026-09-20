@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 213.202.208.199
-  port: 7001
+  server: 130.61.118.114
+  port: 59924
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  cipher: 2022-blake3-chacha20-poly1305
+  password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: web.turbooserver.net.tr
-  port: 2087
+  server: 130.61.82.115
+  port: 59924
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
+  cipher: 2022-blake3-chacha20-poly1305
+  password: UHeN58i27tHwMOyID/b2nSDz0YkTZ6nTfrcihEV7uJ0=
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: 8.209.74.72
   port: 20001
@@ -26,37 +26,27 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 2.58.81.221
-  port: 443
+  server: 209.46.102.22
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 163.8.195.241
-  port: 2087
+  server: 144.31.168.95
+  port: 443
   udp: true
   type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 63.181.79.8
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 31.56.189.27
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  server: srv-21bac9.vless.monster
   port: 2087
   udp: true
   type: vless
@@ -68,27 +58,85 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  server: 130.61.238.224
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: dT3tv6UsJFrJXkrdbknp5jGBiW4Ks646SjZ/w9FBRkE=
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
 - name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: api-4pda-k9x4m.xubi.org
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  server: 162.55.242.208
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  tls: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  server: 130.61.231.49
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  server: 108.165.32.16
   port: 443
   udp: true
   type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  uuid: 6dff8e33-b201-4cbb-8f89-b9418702bff2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: de1.xiaoliyu.cyou
-  port: 4433
+    public-key: IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU
+    short-id: ca3d
+  servername: www.logitech.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  server: 163.8.195.241
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: zoom.us
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  server: 138.201.197.177
+  port: 2083
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: N4Qz43O0+jwN1NnwVVl62TaLkgvhYRylQ8k+rblhB7E=
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  server: 46.8.210.152
+  port: 23443
   udp: true
   type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 127.0.0.1
-  skip-cert-verify: true
+  password: 2a3b101d-d8f9-40e7-9373-b0ef487c0035
+  sni: disk.api-yandex.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,6 +152,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - xiaohe
   - 🇩🇪 德国 (Germany) 09 - xiaohe
   - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
+  - 🇩🇪 德国 (Germany) 13 - xiaohe
+  - 🇩🇪 德国 (Germany) 14 - xiaohe
+  - 🇩🇪 德国 (Germany) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,5 +172,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - xiaohe
   - 🇩🇪 德国 (Germany) 09 - xiaohe
   - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
+  - 🇩🇪 德国 (Germany) 13 - xiaohe
+  - 🇩🇪 德国 (Germany) 14 - xiaohe
+  - 🇩🇪 德国 (Germany) 15 - xiaohe
 rules:
 - MATCH,PROXIES
