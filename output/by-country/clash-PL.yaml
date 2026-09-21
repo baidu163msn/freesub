@@ -6,27 +6,20 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
-  port: 9006
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 217.30.10.44
-  port: 9071
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 185.223.57.10
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -35,17 +28,24 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 217.30.10.44
-  port: 9063
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 34.118.70.195
   port: 443
@@ -57,9 +57,9 @@ proxies:
     public-key: t_ql5pn5MG1bkVQoteCXoKkSTzUzOs_yXMllmsyiqXY
     short-id: 7445870d4c2bdcb0
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 45.192.12.93
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
