@@ -4,32 +4,72 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - xiaohe",
-      "server": "2.58.81.221",
+      "server": "www.speedtest.net",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
+      "uuid": "4ccf70f9-7632-4b5a-9557-10d2dd347bb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/G4J8aNAVZt9KdOjjcfZDFDRI1Obr5E0fp=chrome",
+        "headers": {
+          "Host": "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
-      "server": "8.209.74.72",
-      "server_port": 20001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PWpjPo3tqhPN4yRZ"
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
+      "tls": {
+        "enabled": true,
+        "server_name": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/dirxIBhljtrTSM76Q?ed=2560",
+        "headers": {
+          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
-      "server": "209.46.102.22",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
+      "server": "130.61.41.32",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "6rX+qHo5aRHpvu72NzQT8sPbUdXRBfinV9Occ69h7+A="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "server": "130.61.83.227",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "r0wobeAeafo7jTihelLSR2OBQpYXd5k0CtpAPHaZWew="
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
       "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -48,16 +88,133 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
-      "server": "2.58.81.221",
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
+      "server": "162.55.242.208",
+      "server_port": 2053,
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
+      "server": "91.98.44.116",
       "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
+      "uuid": "39cd736f-d129-4e75-ac39-77f6cf233450",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KDmlFjsZuxHYEHYtFZh-3sLmrkt_KmcxA-sG8twBqxM",
+          "short_id": "d2549f367a3ed3cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
+      "server": "170.101.109.37",
+      "server_port": 443,
+      "uuid": "bf645ffe-a3cc-4480-8e4c-9bcd1af41052",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A",
+          "short_id": "ab88d256"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 09 - xiaohe",
+      "server": "195.201.9.235",
+      "server_port": 11342,
+      "uuid": "0a419fe1-068e-422f-911a-4977fa944e08",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W2swPTQYWu_rfjh2fnyzQ5zg6lK5wKv2Z-mBpVI6_Bg",
+          "short_id": "6f7b38bd9420c4b8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - xiaohe",
+      "server": "108.165.32.16",
+      "server_port": 443,
+      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU",
+          "short_id": "ca3d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 11 - xiaohe",
+      "server": "144.31.168.95",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 12 - xiaohe",
       "server": "de-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
@@ -69,32 +226,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
-      "server": "144.31.168.95",
-      "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇩🇪 德国 (Germany) 13 - xiaohe",
+      "server": "de-1.ff-id.xyz",
+      "server_port": 6215,
+      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
       "tls": {
         "enabled": true,
-        "server_name": "eu-central.cendora.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
-        }
+        "server_name": "cdn.astranet.ignorelist.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.ApiService"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
-      "server": "130.61.118.114",
+      "tag": "🇩🇪 德国 (Germany) 14 - xiaohe",
+      "server": "130.61.116.110",
       "server_port": 59924,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ="
+      "password": "UpeZLBSVADf64wezj0K1CcapVO6MLWWPYtMJue7gxqE="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 15 - xiaohe",
+      "server": "130.61.80.74",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "jm74Mn4yCEOJVqadAL6LGM+7iW6tf1eN3u01OGBools="
     },
     {
       "type": "selector",
@@ -108,7 +268,14 @@
         "🇩🇪 德国 (Germany) 05 - xiaohe",
         "🇩🇪 德国 (Germany) 06 - xiaohe",
         "🇩🇪 德国 (Germany) 07 - xiaohe",
-        "🇩🇪 德国 (Germany) 08 - xiaohe"
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe",
+        "🇩🇪 德国 (Germany) 10 - xiaohe",
+        "🇩🇪 德国 (Germany) 11 - xiaohe",
+        "🇩🇪 德国 (Germany) 12 - xiaohe",
+        "🇩🇪 德国 (Germany) 13 - xiaohe",
+        "🇩🇪 德国 (Germany) 14 - xiaohe",
+        "🇩🇪 德国 (Germany) 15 - xiaohe"
       ]
     },
     {
@@ -122,7 +289,14 @@
         "🇩🇪 德国 (Germany) 05 - xiaohe",
         "🇩🇪 德国 (Germany) 06 - xiaohe",
         "🇩🇪 德国 (Germany) 07 - xiaohe",
-        "🇩🇪 德国 (Germany) 08 - xiaohe"
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe",
+        "🇩🇪 德国 (Germany) 10 - xiaohe",
+        "🇩🇪 德国 (Germany) 11 - xiaohe",
+        "🇩🇪 德国 (Germany) 12 - xiaohe",
+        "🇩🇪 德国 (Germany) 13 - xiaohe",
+        "🇩🇪 德国 (Germany) 14 - xiaohe",
+        "🇩🇪 德国 (Germany) 15 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -28,23 +28,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-      "server": "94.183.170.135",
+      "server": "tishina-axe.dedyn.io",
       "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "password": "319ed24b1c7203aa",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
+        "server_name": "tishina-axe.dedyn.io",
+        "insecure": false
       }
     },
     {
