@@ -20,13 +20,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -40,8 +33,13 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 proxy-groups:
 - name: PROXIES
   type: select
