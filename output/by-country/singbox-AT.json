@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "78.135.77.91",
-      "server_port": 25020,
-      "uuid": "nitro_teeam@",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
