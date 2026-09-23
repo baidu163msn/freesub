@@ -5,6 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   server: 31.77.201.33
   port: 443
   udp: true
@@ -23,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 02 - xiaohe
 rules:
 - MATCH,PROXIES
