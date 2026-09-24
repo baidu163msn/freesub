@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "217.30.10.44",
-      "server_port": 9099,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "shadowsocks",
@@ -23,14 +23,22 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "217.30.10.44",
       "server_port": 9063,
       "method": "aes-256-cfb",
       "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "185.223.57.16",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "185.223.57.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -52,25 +60,9 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
-      "server": "146.59.116.19",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "go.wwwinternetvideo.click",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
@@ -78,6 +70,14 @@
         "server_name": "admin.wwwinternetvideo.click",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
+      "server": "146.59.116.19",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "selector",
