@@ -5,11 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 35.176.47.30
-  port: 22222
+  server: ireland-new-ded1.failspace.top
+  port: 443
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ireland-new-ded1.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
