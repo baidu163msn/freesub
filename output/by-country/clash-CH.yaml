@@ -20,6 +20,14 @@ proxies:
   password: 5413edfb-08d6-4fba-b51c-809c04feb127
   sni: ch2-hy2.veilvpn.life
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  server: 31.76.104.152
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
