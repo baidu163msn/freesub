@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 - xiaohe",
+      "server": "130.61.42.148",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
       "server": "185.177.229.129",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -13,78 +29,72 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
-      "server": "31.76.11.83",
-      "server_port": 26070,
-      "uuid": "e676c6c8-44a8-4a1d-82cc-821a1f70f0c0"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
-      "server": "31.77.161.15",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "server": "85.234.100.9",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
-      "server": "199.247.23.162",
-      "server_port": 80,
-      "uuid": "306dcb21-d02d-49dd-8ec7-0005b972b47a",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
+      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
+      "server": "195.26.26.68",
+      "server_port": 25288,
+      "uuid": "26c88828-53a0-40b9-84fc-e9a50fde5e7d"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
-      "server": "209.46.102.22",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
-      "server": "dehys.superbuba.top",
-      "server_port": 443,
-      "password": "d4cae7df-50a1-428c-bd62-881c8f3bbd90",
-      "tls": {
-        "enabled": true,
-        "server_name": "dehys.superbuba.top",
-        "insecure": false
-      }
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
-      "server": "meow-berlin.nethcloud.top",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
+      "server": "31.70.111.146",
       "server_port": 443,
-      "password": "4cbefb4d-328c-411d-bf76-780df1082df8",
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "meow-berlin.nethcloud.top",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 09 - xiaohe",
       "server": "31.76.11.83",
       "server_port": 23326,
       "uuid": "3dff544a-379e-41f9-95d9-4b95a8e4026e",
@@ -92,69 +102,14 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 09 - xiaohe",
-      "server": "193.24.210.211",
-      "server_port": 25040,
-      "password": "Km/pIG4AGCjCOiGWj5FsWA==",
-      "tls": {
-        "enabled": true,
-        "server_name": "/gay-anal",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 10 - xiaohe",
-      "server": "id-nl-01.mintrocket.org",
-      "server_port": 443,
-      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
-      "flow": "xtls-rprx-vision",
+      "server": "31.129.42.164",
+      "server_port": 6443,
+      "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x",
       "tls": {
         "enabled": true,
-        "server_name": "id-nl-01.mintrocket.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
-          "short_id": "fee1f986a72444db"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 11 - xiaohe",
-      "server": "de1.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 12 - xiaohe",
-      "server": "188.245.25.223",
-      "server_port": 1085,
-      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 13 - xiaohe",
-      "server": "8.211.15.144",
-      "server_port": 8443,
-      "password": "fc04RSUu3TfONQnlbKTwvA",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
+        "server_name": "node111.ichost.cloud",
+        "insecure": false
       }
     },
     {
@@ -171,10 +126,7 @@
         "🇩🇪 德国 (Germany) 07 - xiaohe",
         "🇩🇪 德国 (Germany) 08 - xiaohe",
         "🇩🇪 德国 (Germany) 09 - xiaohe",
-        "🇩🇪 德国 (Germany) 10 - xiaohe",
-        "🇩🇪 德国 (Germany) 11 - xiaohe",
-        "🇩🇪 德国 (Germany) 12 - xiaohe",
-        "🇩🇪 德国 (Germany) 13 - xiaohe"
+        "🇩🇪 德国 (Germany) 10 - xiaohe"
       ]
     },
     {
@@ -190,10 +142,7 @@
         "🇩🇪 德国 (Germany) 07 - xiaohe",
         "🇩🇪 德国 (Germany) 08 - xiaohe",
         "🇩🇪 德国 (Germany) 09 - xiaohe",
-        "🇩🇪 德国 (Germany) 10 - xiaohe",
-        "🇩🇪 德国 (Germany) 11 - xiaohe",
-        "🇩🇪 德国 (Germany) 12 - xiaohe",
-        "🇩🇪 德国 (Germany) 13 - xiaohe"
+        "🇩🇪 德国 (Germany) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
