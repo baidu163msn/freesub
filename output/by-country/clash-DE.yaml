@@ -5,12 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 130.61.42.148
-  port: 59924
+  server: 31.76.11.83
+  port: 26070
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
+  type: vless
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
   server: 209.46.102.22
   port: 8388
@@ -19,6 +18,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  server: 130.61.42.148
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  server: meow-berlin.nethcloud.top
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  sni: meow-berlin.nethcloud.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
   server: 185.177.229.129
   port: 22324
   udp: true
@@ -26,68 +40,70 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 85.234.100.9
-  port: 40443
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  server: 31.77.161.15
+  port: 443
   udp: true
   type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
   client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 195.26.26.68
-  port: 25288
-  udp: true
-  type: vless
-  uuid: 26c88828-53a0-40b9-84fc-e9a50fde5e7d
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 2.58.81.221
-  port: 80
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  server: 185.226.172.8
+  port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
   server: 8.209.74.72
   port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 31.70.111.146
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  server: dehys.superbuba.top
   port: 443
   udp: true
-  type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 31.76.11.83
-  port: 23326
+  type: hysteria2
+  password: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  sni: dehys.superbuba.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  server: 193.108.117.54
+  port: 443
   udp: true
   type: vmess
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: 31.129.42.164
-  port: 6443
+  tls: true
+  servername: aidrivercat.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  server: actual-squid.rooster465.autos
+  port: 443
   udp: true
   type: trojan
-  password: ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x
-  sni: node111.ichost.cloud
+  password: UX82473651
+  sni: actual-squid.rooster465.autos
   skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  server: 31.76.11.83
+  port: 11750
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,6 +119,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - xiaohe
   - 🇩🇪 德国 (Germany) 09 - xiaohe
   - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,5 +136,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - xiaohe
   - 🇩🇪 德国 (Germany) 09 - xiaohe
   - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
 rules:
 - MATCH,PROXIES

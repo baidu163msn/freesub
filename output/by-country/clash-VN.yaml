@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 185.91.53.251
-  port: 8443
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  server: 109.110.162.40
+  port: 23005
   udp: true
   type: trojan
-  password: ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x
-  sni: sw-one.quickgo.cc
+  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
+  sni: 82.yuanul.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 rules:
 - MATCH,PROXIES
