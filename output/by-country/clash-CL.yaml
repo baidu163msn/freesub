@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - xiaohe
-  server: 64.176.16.32
+  server: platform107.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform107
     headers:
-      Host: platform113.halalkhor.info
+      Host: platform107.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
