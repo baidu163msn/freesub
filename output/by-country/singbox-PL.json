@@ -4,40 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "31.77.59.163",
-      "server_port": 443,
-      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl37.mech-pro.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
-          "short_id": "16e0f049"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "cheerful-swan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -52,18 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
