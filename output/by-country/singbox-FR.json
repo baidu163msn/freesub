@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
+      "server": "35.181.166.40",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
       "server": "51.255.13.232",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -13,26 +25,26 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "35.181.166.40",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "server": "62.210.124.146",
+      "server_port": 22000,
+      "password": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-fr-002.fastervpn.world",
+        "server_name": "www.microsoft.com",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
-      "server": "62.210.7.139",
-      "server_port": 60111,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "server": "fmwf6gbnad0a.dop16.com",
+      "server_port": 443,
+      "password": "2e631f0c-226a-484b-9e7c-d6c9c444ef13",
       "tls": {
         "enabled": true,
-        "server_name": "62.210.7.139",
-        "insecure": true
+        "server_name": "fmwf6gbnad0a.dop16.com",
+        "insecure": false
       }
     },
     {
@@ -42,7 +54,8 @@
         "auto",
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe"
+        "🇫🇷 法国 (France) 03 - xiaohe",
+        "🇫🇷 法国 (France) 04 - xiaohe"
       ]
     },
     {
@@ -51,7 +64,8 @@
       "outbounds": [
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe"
+        "🇫🇷 法国 (France) 03 - xiaohe",
+        "🇫🇷 法国 (France) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
