@@ -6,16 +6,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "70.34.252.154",
-      "server_port": 80,
-      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "70.34.255.101",
       "server_port": 80,
       "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
@@ -24,8 +14,32 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "81.90.20.200",
+      "server_port": 443,
+      "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.pupoe.sbs",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
       "server": "cheerful-swan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -42,7 +56,8 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
@@ -51,7 +66,8 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
