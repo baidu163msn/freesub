@@ -16,14 +16,12 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "81.90.20.200",
-      "server_port": 443,
-      "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.pupoe.sbs",
-        "insecure": false
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -50,32 +48,17 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "70.34.252.154",
-      "server_port": 80,
-      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "177.1.192.72",
+      "server": "81.90.20.200",
       "server_port": 443,
-      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
+      "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "pl.pupoe.sbs",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
-          "short_id": "46455ff0"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -87,8 +70,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
@@ -98,8 +80,7 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
