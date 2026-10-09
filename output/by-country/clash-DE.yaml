@@ -5,48 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 31.76.11.83
-  port: 22849
-  udp: true
-  type: vless
-  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: 3.79.59.187
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 31.76.11.83
-  port: 55969
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  server: 45.32.152.194
+  port: 443
   udp: true
-  type: vmess
-  uuid: 049a57b9-4913-4f9f-9cda-a861989ee59d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 2b5798ed-8acc-57fa-ad1a-e378ab143a43
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4O9OGLb8X8wUSx1mWlSG67kRZk7Jey4-MVyt8tzaNFk
+    short-id: 17d65a607618697d
+  servername: www.vimeo.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  server: 130.17.25.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  server: 217.60.179.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  servername: ge-s-1.pythonmakemigreat.wiki
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
   server: vpn-de-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: actual-squid.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
+  sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
   server: 31.70.111.146
@@ -62,27 +79,27 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 89.169.53.176
-  port: 4443
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  server: 2.27.69.117
+  port: 443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: gateway.icloud.com
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 57.129.113.16
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
 - name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: 2.27.35.55
+  server: 2.27.69.128
   port: 443
   udp: true
   type: vless
@@ -93,67 +110,21 @@ proxies:
     public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
     short-id: e696e744
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  server: 144.31.215.227
-  port: 443
+  server: 89.169.53.176
+  port: 4443
   udp: true
   type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  servername: cdn-de.bulkavpn.top
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  server: 31.76.11.83
-  port: 42800
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: adzpq0ltVHdCxO2lsW5N9C8H5B9hXnD7YyXZfP5aulw=
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  server: top.bostnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 83rwy5zazcx1f4i6
-  sni: top.bostnet.xyz
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  server: 63.178.198.94
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pleased-albacore.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  server: de1.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  server: 3.75.93.113
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: meet-goshawk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
   server: ger1.fytpn.com
   port: 443
   udp: true
@@ -161,13 +132,40 @@ proxies:
   password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
   sni: ger1.fytpn.com
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  server: 3.77.34.196
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  server: actual-squid.rooster465.autos
   port: 443
   udp: true
+  type: trojan
+  password: UX82473651
+  sni: actual-squid.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  server: 138.124.73.88
+  port: 443
+  udp: true
+  type: vless
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SpDERK2bCJgRdaDP3cSsQDfOCghD94d0-zjuKIHYQy0
+    short-id: a2aa
+  servername: github.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  server: 31.76.11.83
+  port: 22849
+  udp: true
+  type: vless
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  server: 31.76.11.83
+  port: 42800
+  udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: adzpq0ltVHdCxO2lsW5N9C8H5B9hXnD7YyXZfP5aulw=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -189,9 +187,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 14 - xiaohe
   - 🇩🇪 德国 (Germany) 15 - xiaohe
   - 🇩🇪 德国 (Germany) 16 - xiaohe
-  - 🇩🇪 德国 (Germany) 17 - xiaohe
-  - 🇩🇪 德国 (Germany) 18 - xiaohe
-  - 🇩🇪 德国 (Germany) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -213,8 +208,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 14 - xiaohe
   - 🇩🇪 德国 (Germany) 15 - xiaohe
   - 🇩🇪 德国 (Germany) 16 - xiaohe
-  - 🇩🇪 德国 (Germany) 17 - xiaohe
-  - 🇩🇪 德国 (Germany) 18 - xiaohe
-  - 🇩🇪 德国 (Germany) 19 - xiaohe
 rules:
 - MATCH,PROXIES

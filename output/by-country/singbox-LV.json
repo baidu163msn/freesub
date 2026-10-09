@@ -4,14 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe",
-      "server": "80.243.228.73",
-      "server_port": 2085,
-      "uuid": "41fe1f2f-f981-44a5-939f-9b59d15ca955",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "type": "trojan",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+      "server": "lit.fytpn.com",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "lit.fytpn.com",
+        "insecure": false
       }
     },
     {
@@ -19,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
