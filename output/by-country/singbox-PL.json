@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "2.27.244.236",
-      "server_port": 21384,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "server": "31.76.251.107",
+      "server_port": 443,
+      "uuid": "accfae78-b31c-47cb-86a1-bb9a07973e4a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "polandsixsebenrkn010.qcloud.surf",
-        "insecure": true
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2e-kBGQGyc6XtqOSCadWQxs8gAgLUhAAedXyk8A51Sw",
+          "short_id": "74402fce7bda718e"
+        }
       }
     },
     {

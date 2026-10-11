@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 2.27.244.236
-  port: 21384
+  server: 31.76.251.107
+  port: 443
   udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: polandsixsebenrkn010.qcloud.surf
-  skip-cert-verify: true
+  type: vless
+  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2e-kBGQGyc6XtqOSCadWQxs8gAgLUhAAedXyk8A51Sw
+    short-id: 74402fce7bda718e
+  servername: google.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
