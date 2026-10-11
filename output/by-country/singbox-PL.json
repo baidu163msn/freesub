@@ -4,65 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "pl-1-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl-1-1.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "95.85.253.241",
-      "server_port": 2087,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
-      "tls": {
-        "enabled": true,
-        "server_name": "95.85.253.241",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "202.78.163.237",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "95.85.253.241",
-      "server_port": 2083,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
-      "tls": {
-        "enabled": true,
-        "server_name": "95.85.253.241",
-        "insecure": false
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "polandsixsebenrkn010.qcloud.surf",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "2.27.244.236",
       "server_port": 21384,
       "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
       "tls": {
@@ -72,49 +16,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
-      "server": "195.133.80.152",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UcFVpzbYTy8Iym6ZnCAtLQK-MeRg6wZuyni4xEOKG18",
-          "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe",
-        "🇵🇱 波兰 (Poland) 06 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
