@@ -4,21 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "87.76.134.44",
-      "server_port": 3231,
-      "password": "43212c32-01f2-4356-b216-67dc1c178262",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2-bkjbu.vpvr4ib84nuv6hdkt.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "pl-1-1.unturned-rust-dead.lol",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "80.47.12.94",
       "server_port": 443,
       "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
       "tls": {
@@ -37,7 +25,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
@@ -53,8 +41,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ]
     },
     {
@@ -62,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

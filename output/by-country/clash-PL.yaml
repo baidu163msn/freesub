@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 87.76.134.44
-  port: 3231
-  udp: true
-  type: hysteria2
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  sni: pl2-bkjbu.vpvr4ib84nuv6hdkt.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl-1-1.unturned-rust-dead.lol
+  server: 80.47.12.94
   port: 443
   udp: true
   type: vless
@@ -23,7 +15,7 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: admin.wwwinternetvideo.click
   port: 443
   udp: true
@@ -38,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
